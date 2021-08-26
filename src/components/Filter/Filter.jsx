@@ -1,6 +1,6 @@
-import React from 'react';
-import style from './Filter.module.css';
-import PropTypes from 'prop-types';
+import React from "react";
+import style from "./Filter.module.css";
+import PropTypes from "prop-types";
 
 const Filter = ({ filter, filterContacts }) => {
   return (
