@@ -1,10 +1,10 @@
-import React, { Component } from "react";
-import style from "./ContactForm.module.css";
+import React, { Component } from 'react';
+import style from './ContactForm.module.css';
 
 class ContactForm extends Component {
   state = {
-    name: "",
-    number: "",
+    name: '',
+    number: '',
   };
 
   handleInput = (event) => {
@@ -15,7 +15,7 @@ class ContactForm extends Component {
   };
 
   reset = () => {
-    this.setState({ name: "", number: "" });
+    this.setState({ name: '', number: '' });
   };
 
   handleSubmit = (event) => {
@@ -58,5 +58,10 @@ class ContactForm extends Component {
     );
   }
 }
+
+ContactForm.propTypes = {
+  addContact: PropTypes.func,
+};
+
 
 export default ContactForm;
